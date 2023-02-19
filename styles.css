@@ -150,6 +150,10 @@ img {
   margin: 2rem 0;
 }
 
+#lives {
+  font-weight: bold;
+}
+
 #lives-container {
   border: 1px dashed var(--white);
   padding: 1rem;
