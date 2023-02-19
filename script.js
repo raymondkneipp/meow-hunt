@@ -31,7 +31,7 @@ const updateLives = () => {
 
   if (lives === 0) {
     gameOver = true
-    alert("You ran out of lives!")
+    alert('You ran out of lives!')
   }
 }
 

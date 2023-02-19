@@ -24,6 +24,7 @@ body {
   );
   background-attachment: fixed;
   color: var(--white);
+  overflow-x: hidden;
 }
 
 .container {
@@ -40,6 +41,7 @@ h5,
 h6 {
   font-family: Cat;
   text-align: center;
+  text-shadow: 4px 4px 4px rgb(var(--brown));
 }
 
 h1 {

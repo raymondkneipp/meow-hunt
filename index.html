@@ -1,82 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meow Hunt Game</title>
-    <link
-      rel="icon"
-      type="image"
-      href="https://www.iconarchive.com/download/i78377/iconka/meow/cat-walk.256.png"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <h1>Meow Hunt</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meow Hunt Game</title>
+  <link rel="icon" type="image" href="https://www.iconarchive.com/download/i78377/iconka/meow/cat-walk.256.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <img
-        src="https://media.cnn.com/api/v1/images/stellar/prod/150324154003-01-internet-cats-restricted.jpg?q=w_3000,h_1688,x_0,y_0,c_fill/w_1280"
-      />
+<body>
+  <div class="container">
+    <h1>Meow Hunt</h1>
 
-      <div id="rules">
-        <h2>Rules</h2>
+    <img
+      src="https://media.cnn.com/api/v1/images/stellar/prod/150324154003-01-internet-cats-restricted.jpg?q=w_3000,h_1688,x_0,y_0,c_fill/w_1280" />
 
-        <p>
-          You are an angry 😡 cat 🐈 in need of some catnip 🍃. Your evil owner
-          hid the catnip in the litter box 📦. You don’t have much energy so be
-          careful where you dig. Avoid the turd 💩 at all costs. Digging up the
-          turd will unleash a terrible odor 👃 and your owner will kick you to
-          the curb ☠️.
-        </p>
+    <div id="rules">
+      <h2>Rules</h2>
 
-        <ul>
-          <li>Click on a set of paw prints to dig 🐾</li>
-          <li>Find the catnip to win 🍃</li>
-          <li>You have 9 chances to win</li>
-          <li>If you dig up a turd the game is over 💩</li>
-        </ul>
-      </div>
+      <p>
+        You are an angry 😡 cat 🐈 in need of some catnip 🍃. Your evil owner
+        hid the catnip in the litter box 📦. You don’t have much energy so be
+        careful where you dig. Avoid the turd 💩 at all costs. Digging up the
+        turd will unleash a terrible odor 👃 and your owner will kick you to
+        the curb ☠️.
+      </p>
 
-      <div id="game">
-        <div id="lives-container">Lives: <span id="lives">0</span></div>
-
-        <table>
-          <tr>
-            <td id="0" onclick="catnipFinder(0)">🐾</td>
-            <td id="1" onclick="catnipFinder(1)">🐾</td>
-            <td id="2" onclick="catnipFinder(2)">🐾</td>
-            <td id="3" onclick="catnipFinder(3)">🐾</td>
-          </tr>
-          <tr>
-            <td id="4" onclick="catnipFinder(4)">🐾</td>
-            <td id="5" onclick="catnipFinder(5)">🐾</td>
-            <td id="6" onclick="catnipFinder(6)">🐾</td>
-            <td id="7" onclick="catnipFinder(7)">🐾</td>
-          </tr>
-          <tr>
-            <td id="8" onclick="catnipFinder(8)">🐾</td>
-            <td id="9" onclick="catnipFinder(9)">🐾</td>
-            <td id="10" onclick="catnipFinder(10)">🐾</td>
-            <td id="11" onclick="catnipFinder(11)">🐾</td>
-          </tr>
-          <tr>
-            <td id="12" onclick="catnipFinder(12)">🐾</td>
-            <td id="13" onclick="catnipFinder(13)">🐾</td>
-            <td id="14" onclick="catnipFinder(14)">🐾</td>
-            <td id="15" onclick="catnipFinder(15)">🐾</td>
-          </tr>
-        </table>
-
-        <button type="button" onclick="resetGame()">New Game</button>
-      </div>
-
-      <footer>
-        <a href="https://raymondkneipp.com" target="_blank">Made by Raymond</a>
-      </footer>
+      <ul>
+        <li>Click on a set of paw prints to dig 🐾</li>
+        <li>Find the catnip to win 🍃</li>
+        <li>You have 9 chances to win</li>
+        <li>If you dig up a turd the game is over 💩</li>
+      </ul>
     </div>
-  </body>
-  <script type="text/javascript" src="script.js"></script>
+
+    <div id="game">
+      <div id="lives-container">Lives: <span id="lives">0</span></div>
+
+      <table>
+        <tr>
+          <td id="0" onclick="catnipFinder(0)">🐾</td>
+          <td id="1" onclick="catnipFinder(1)">🐾</td>
+          <td id="2" onclick="catnipFinder(2)">🐾</td>
+          <td id="3" onclick="catnipFinder(3)">🐾</td>
+        </tr>
+        <tr>
+          <td id="4" onclick="catnipFinder(4)">🐾</td>
+          <td id="5" onclick="catnipFinder(5)">🐾</td>
+          <td id="6" onclick="catnipFinder(6)">🐾</td>
+          <td id="7" onclick="catnipFinder(7)">🐾</td>
+        </tr>
+        <tr>
+          <td id="8" onclick="catnipFinder(8)">🐾</td>
+          <td id="9" onclick="catnipFinder(9)">🐾</td>
+          <td id="10" onclick="catnipFinder(10)">🐾</td>
+          <td id="11" onclick="catnipFinder(11)">🐾</td>
+        </tr>
+        <tr>
+          <td id="12" onclick="catnipFinder(12)">🐾</td>
+          <td id="13" onclick="catnipFinder(13)">🐾</td>
+          <td id="14" onclick="catnipFinder(14)">🐾</td>
+          <td id="15" onclick="catnipFinder(15)">🐾</td>
+        </tr>
+      </table>
+
+      <button type="button" onclick="resetGame()">New Game</button>
+    </div>
+
+    <footer>
+      <a href="https://raymondkneipp.com" target="_blank">Made by Raymond</a>
+    </footer>
+  </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
 </html>
